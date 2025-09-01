@@ -53,3 +53,27 @@ const isPrime = (n) => {
   return true;
 };
 console.log(isPrime(7)); // true
+
+//objects
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2020,
+  getInfo: function() {
+    return `${this.brand} ${this.model} (${this.year})`;
+  }
+};
+console.log(car.getInfo());
+
+let obj = {a:1, b:2, c:3};
+console.log(Object.keys(obj).length); // 3
+
+let students = [
+  {name: "Aman", marks: 88},
+  {name: "Ravi", marks: 95},
+  {name: "Simran", marks: 72}
+];
+let topStudent = students.reduce((prev, curr) => 
+  prev.marks > curr.marks ? prev : curr
+);
+console.log(topStudent.name); // Ravi
