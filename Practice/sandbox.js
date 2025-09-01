@@ -31,3 +31,25 @@ switch(day) {
   // ... add others
   default: console.log("Invalid");
 }
+
+// Functions 
+function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) result *= i;
+  return result;
+}
+console.log(factorial(5)); // 120
+
+function reverseStr(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseStr("hello"));
+
+const isPrime = (n) => {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+console.log(isPrime(7)); // true
