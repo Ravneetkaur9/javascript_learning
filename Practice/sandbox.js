@@ -77,3 +77,19 @@ let topStudent = students.reduce((prev, curr) =>
   prev.marks > curr.marks ? prev : curr
 );
 console.log(topStudent.name); // Ravi
+
+//DOM
+document.getElementById("colorBtn").addEventListener("click", () => {
+  document.body.style.background = "lightgreen";
+});
+
+document.getElementById("addBtn").addEventListener("click", () => {
+  let text = document.getElementById("userInput").value;
+  let li = document.createElement("li");
+  li.textContent = text;
+  document.getElementById("list").appendChild(li);
+});
+
+document.querySelectorAll("p").forEach(p => {
+  p.style.color = "blue";
+});
