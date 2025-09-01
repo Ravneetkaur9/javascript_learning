@@ -1,18 +1,4 @@
-// <!-- index.html (minimal) -->
-// <body>
-//   <h1 id="title">Practice DOM</h1>
 
-//   <input id="todo-input" placeholder="Add task">
-//   <button id="add-btn">Add</button>
-//   <ul id="todo-list"></ul>
-
-//   <button id="theme-btn">Toggle Theme</button>
-
-//   <script src="sandbox.js"></script>
-// </body>
-
-
-// sandbox.js
 
 // 1) Selectors
 const title = document.getElementById("title");
